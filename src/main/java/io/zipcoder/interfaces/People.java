@@ -52,15 +52,7 @@ public void remove(long id)
         return personList.size();
     }
 
-    public E[] toArray() {
-        if(personList.size() == 0)
-            return null;
-
-        //return (E[])personList.toArray();
-        return personList.toArray((E[]) Array.newInstance(
-                personList.get(0).getClass(), personList.size()));
-    }
-
+    public abstract E[] toArray() ;
 
     public Iterator<E> iterator() {
         return (Iterator<E>)personList.iterator(); //todo we may have to change this

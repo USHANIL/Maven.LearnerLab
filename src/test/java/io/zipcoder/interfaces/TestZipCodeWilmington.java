@@ -17,7 +17,7 @@ public class TestZipCodeWilmington {
 
         zipInstance.hostLecture (instructorid, numberOfHours);
 
-        Assert.assertEquals(1,student1.getTotalStudyTime(),0.01);
+        Assert.assertEquals(2,student1.getTotalStudyTime(),0.01);
 
     }
 
